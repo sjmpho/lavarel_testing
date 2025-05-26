@@ -22,4 +22,10 @@ class UserController extends Controller
 
         return redirect('/toMain');
     }
+    public function LoginOut()
+    {
+        auth()->logout();
+        return redirect('/toMain');
+
+    }
 }
