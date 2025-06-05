@@ -14,13 +14,18 @@
         @csrf
         <button>Just Log me out </button>
     </form>
+    <form action="/CreatePost" method="POST">
+        @csrf
+        <h3>Create a Post Bru</h3>
+        <button>Create a Post</button>
+    </form>
 
 @else
     <!-- if user is not logged in this will run -->
 
     <h2> you really need to get logged in buddy !</h2>
 @csrf
-    <form action="/" method="GET">
+    <form action="/toLogin" method="GET">
         @csrf
         <button>Just Log me In </button>
     </form>
